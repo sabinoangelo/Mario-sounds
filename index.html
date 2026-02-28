@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Soundboard</title>
+    <meta name="description" content="Una fantastica soundboard per i suoni di Super Mario">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Mario Soundboard</h1>
+        </header>
+
+        <main class="soundboard">
+            <button class="sound-btn" data-sound="coin">
+                <span class="icon">🪙</span>
+                <span class="label">Coin</span>
+            </button>
+            <button class="sound-btn" data-sound="death">
+                <span class="icon">💀</span>
+                <span class="label">Death</span>
+            </button>
+            <button class="sound-btn" data-sound="jump">
+                <span class="icon">⬆️</span>
+                <span class="label">Jump</span>
+            </button>
+            <button class="sound-btn" data-sound="mario_wins">
+                <span class="icon">🏆</span>
+                <span class="label">Mario Wins</span>
+            </button>
+            <button class="sound-btn" data-sound="mushroom">
+                <span class="icon">🍄</span>
+                <span class="label">Mushroom</span>
+            </button>
+            <button class="sound-btn" data-sound="underground">
+                <span class="icon">🚇</span>
+                <span class="label">Underground</span>
+            </button>
+            <button class="sound-btn" data-sound="soundtrack">
+                <span class="icon">🎵</span>
+                <span class="label">Soundtrack</span>
+            </button>
+        </main>
+
+        <div class="controls">
+            <button id="stop-all" class="control-btn" aria-label="Ferma tutti i suoni">
+                <span class="icon">⏹️</span> Ferma Tutto
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="audio-coin" src="coin.mpeg" preload="auto"></audio>
+    <audio id="audio-death" src="death.mpeg" preload="auto"></audio>
+    <audio id="audio-jump" src="jump.mpeg" preload="auto"></audio>
+    <audio id="audio-mario_wins" src="mario_wins.mpeg" preload="auto"></audio>
+    <audio id="audio-mushroom" src="mushroom.mp3" preload="auto"></audio>
+    <audio id="audio-soundtrack" src="soundtrack.mpeg" preload="auto"></audio>
+    <audio id="audio-underground" src="underground.mpeg" preload="auto"></audio>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
